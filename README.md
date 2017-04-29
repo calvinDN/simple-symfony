@@ -1,4 +1,17 @@
-simple
-======
+Simple App
+==========
 
-A Symfony project created on April 22, 2017, 11:22 pm.
+- Simple app with login and an info page
+    - Info page contains steaming data populated by rest service
+- Simple REST api
+- REST populator app to populate rest data
+    - Probably Java
+- Cloud Formation
+    - Buy domain name
+
+
+Roadmap
+=======
+
+- Docker
+- Convert to serverless
