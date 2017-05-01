@@ -16,17 +16,5 @@ Simple App
 Roadmap
 =======
 
-- Docker
+- [x] Docker
 - Convert to serverless
-
-
-
-
-
-
-
-Docker
-------
-docker build -t simple .
-docker run -p 8888:80 simple
-- fix docker issues, try with basic symfony install, error has anything to do with mysql?
