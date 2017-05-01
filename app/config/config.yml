@@ -76,3 +76,16 @@ fos_user:
     from_email:
             address: "calvindn@gmail.com"
             sender_name: "No Reply"
+
+fos_rest:
+    body_listener: true
+    format_listener:
+        rules:
+            - { path: '^/', priorities: ['json'], fallback_format: json, prefer_extension: false }
+    param_fetcher_listener: true
+    view:
+        view_response_listener: 'force'
+        formats:
+            json: true
+    zone:
+        - { path: ^/api/* }
