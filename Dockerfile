@@ -14,12 +14,12 @@ COPY . /var/www/html/
 
 WORKDIR /var/www/html/
 
+# Set writable permissions
 RUN rm -rf var/cache/*
-RUN usermod -aG www-data root
-
-# TODO: tighten permissions
-RUN chmod 777 var/cache/
-RUN chmod 777 var/logs/
+RUN chown -R www-data:www-data var/
+RUN chmod 775 var/cache/
+RUN chmod 775 var/logs/
+RUN chmod -R 775 var/sessions/
 
 EXPOSE 80
 

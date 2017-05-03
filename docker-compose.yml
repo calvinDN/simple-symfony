@@ -6,17 +6,17 @@ services:
     depends_on:
       - mysql
     ports:
-      - "8888:80"
+      - "${SIMPLE_EXTERNAL_PORT}:80"
     environment:
-      - DB_NAME=simple
-      - DB_HOST=mysql
-      - DB_USER=root
-      - DB_PASSWORD=password
+      - DB_NAME=${SIMPLE_DB_NAME}
+      - DB_HOST=${SIMPLE_DB_HOST}
+      - DB_USER=${SIMPLE_DB_USER}
+      - DB_PASSWORD=${SIMPLE_DB_PASSWORD}
     restart: unless-stopped
   mysql:
     image: mysql:latest
     environment:
-      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_ROOT_PASSWORD=${SIMPLE_DB_PASSWORD}
     volumes:
       - mysql-volume:/var/lib/mysql
     restart: unless-stopped
