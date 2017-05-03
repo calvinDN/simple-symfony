@@ -3,6 +3,11 @@ set -e
 
 mysql -u${DB_USER} -p${DB_PASSWORD} -h${DB_HOST} -e ";"
 
-
 # Need to check if db is created, if not create
-#mysql -u${DB_USER} -p${DB_PASSWORD} -h${DB_HOST} -e "create database ${DB_NAME};"
+rc=0
+mysql -u${DB_USER} -p${DB_PASSWORD} -h${DB_HOST} -e "create database ${DB_NAME};" || rc=$?
+if [ $rc -eq 0 ] ; then
+    php bin/console doctrine:schema:update --force
+    php bin/console fos:user:create admin --super-admin admin@simple-symfony.com password
+fi
+
