@@ -22,10 +22,15 @@ Ideas
     - admin - add, delete, update games
     - graphs
 - Simple REST api
+- HATEOAS
+- Datatables
 
+To Do
+-----
 - Secure rest
 - write tests for rest
 - fix user post roles
+- Localization
 
 Roadmap
 -------
