@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/calvinDN/simple-symfony.svg?branch=master)](https://travis-ci.org/calvinDN/simple-symfony)
 # Simple App
 
 ## Installation
@@ -14,13 +15,13 @@
 
 Ideas
 -----
-- Simple app with login and an info page
-    - Info page contains steaming data populated by rest service
+- Simple elo tracking app
+    - user login / registration
+    - generic, support multiple activitie at once
+    - user - add new game
+    - admin - add, delete, update games
+    - graphs
 - Simple REST api
-- REST populator app to populate rest data
-    - Probably Java
-- Cloud Formation
-    - Buy domain name
 
 - Secure rest
 - write tests for rest
