@@ -19,6 +19,11 @@ class User extends BaseUser
      */
     protected $id;
 
+    /**
+     * @ORM\Column(type="integer", nullable=false, options={"default" : 1200})
+     */
+    private $elo;
+
     public function __construct()
     {
         parent::__construct();
