@@ -10,8 +10,8 @@
 
 ### Local
 1. `composer install`
-2. Setup Apache with `docker/apache/apache.conf`
-
+2. Run `yarn`
+3. Setup Apache with `docker/apache/apache.conf`
 
 Ideas
 -----

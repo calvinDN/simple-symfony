@@ -16,6 +16,13 @@ parameters:
     database_password: '%env(DB_PASSWORD)%'
     env(DB_PASSWORD): password
 
+    aws_js_sdk_access_key_id: '%env(SIMPLE_AWS_JS_ACCESS_KEY_ID)%'
+
+    aws_js_sdk_secret_access_key: '%env(SIMPLE_AWS_JS_SECRET_ACCESS_KEY)%'
+
+    aws_js_sdk_region: '%env(SIMPLE_AWS_JS_REGION)%'
+    env(SIMPLE_AWS_JS_REGION): us-east-1
+
     # You should uncomment this if you want to use pdo_sqlite
     #database_path: '%kernel.root_dir%/../var/data/data.sqlite'
 
