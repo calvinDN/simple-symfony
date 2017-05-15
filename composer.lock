@@ -2816,13 +2816,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/37f9f4e165b033fb76cc2320838321cc57140e65",
                 "reference": "37f9f4e165b033fb76cc2320838321cc57140e65",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://toran.xe.com/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "symfony/console": "~2.7|~3.0",
