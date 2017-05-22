@@ -24,13 +24,19 @@ Ideas
 - Simple REST api
 - HATEOAS
 - Datatables
+- Break into components
 
 To Do
 -----
 - Secure rest
+- Secure sns with cognito, dev login
 - write tests for rest
 - fix user post roles
 - Localization
+
+Known Issues
+------------
+- Exception after multiple failed login attempts
 
 Roadmap
 -------
