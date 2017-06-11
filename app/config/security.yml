@@ -27,4 +27,7 @@ security:
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/, role: ROLE_ADMIN }
         - { path: ^/info/number, role: ROLE_ADMIN }
-        - { path: ^/leaderboard, role: ROLE_USER }
+        - { path: ^/test, role: ROLE_ADMIN }
+        - { path: ^/cognito/confirm, role: ROLE_USER }
+        - { path: ^/cognito/signin, role: ROLE_USER }
+        - { path: ^/cognito/signup, role: ROLE_USER }

@@ -1,0 +1,29 @@
+{% include 'settings.html.twig' %}
+
+{% stylesheets
+'@AppBundle/Resources/public/js/node_modules/ladda/dist/ladda.min.css'
+%}
+<link rel="stylesheet" href="{{ asset_url }}" />
+{% endstylesheets %}
+
+{% javascripts
+'@AppBundle/Resources/public/js/node_modules/aws-sdk/dist/aws-sdk.js'
+'@AppBundle/Resources/public/js/node_modules/jquery/dist/jquery.min.js'
+'@AppBundle/Resources/public/js/node_modules/jquery.cookie/jquery.cookie.js'
+'@AppBundle/Resources/public/js/node_modules/ladda/dist/spin.min.js'
+'@AppBundle/Resources/public/js/node_modules/ladda/dist/ladda.min.js'
+'@AppBundle/Resources/public/js/node_modules/amazon-cognito-identity-js/dist/aws-cognito-sdk.js'
+'@AppBundle/Resources/public/js/node_modules/amazon-cognito-identity-js/dist/amazon-cognito-identity.js'
+'@AppBundle/Resources/public/js/custom/cognitoSignin.js'
+%}
+<script src="{{ asset_url }}"></script>
+{% endjavascripts %}
+
+<h4>Sign In</h4>
+
+<div id="login-message"></div>
+
+Username: <input type="username" name="username">
+Password: <input type="password" name="password">
+<!--<button id="login">Login</button>-->
+<button id='login' class="ladda-button" data-style="zoom-in" data-color="green" data-size="xs"><span class="ladda-label">Login</span></button>

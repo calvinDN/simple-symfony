@@ -2,7 +2,13 @@
 # yarn lockfile v1
 
 
-aws-sdk@^2.50.0:
+amazon-cognito-identity-js@^1.18.0:
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/amazon-cognito-identity-js/-/amazon-cognito-identity-js-1.18.0.tgz#15db42c64f038b7d009b3c35627fb5674f25ccd8"
+  dependencies:
+    aws-sdk "^2.6.0"
+
+aws-sdk@^2.50.0, aws-sdk@^2.6.0:
   version "2.50.0"
   resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.50.0.tgz#6b2855741f8efe064f824a3db0bf4f3bc5bde018"
   dependencies:
@@ -39,9 +45,19 @@ jmespath@0.15.0:
   version "0.15.0"
   resolved "https://registry.yarnpkg.com/jmespath/-/jmespath-0.15.0.tgz#a3f222a9aae9f966f5d27c796510e28091764217"
 
+jquery.cookie@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/jquery.cookie/-/jquery.cookie-1.4.1.tgz#d63dce209eab691fe63316db08ca9e47e0f9385b"
+
 jquery@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
+
+ladda@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ladda/-/ladda-1.0.0.tgz#447687ca4aeda438f616cb7710d8063ac96e9f29"
+  dependencies:
+    spin.js "^2.0.0"
 
 lodash@^4.0.0:
   version "4.17.4"
@@ -59,6 +75,10 @@ sax@1.2.1, sax@>=0.6.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.1.tgz#7b8e656190b228e81a66aea748480d828cd2d37a"
 
+spin.js@^2.0.0:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/spin.js/-/spin.js-2.3.2.tgz#6caa56d520673450fd5cfbc6971e6d0772c37a1a"
+
 url@0.10.3:
   version "0.10.3"
   resolved "https://registry.yarnpkg.com/url/-/url-0.10.3.tgz#021e4d9c7705f21bbf37d03ceb58767402774c64"
@@ -69,6 +89,10 @@ url@0.10.3:
 uuid@3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.0.1.tgz#6544bba2dfda8c1cf17e629a3a305e2bb1fee6c1"
+
+vue@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.3.3.tgz#d1eaa8fde5240735a4563e74f2c7fead9cbb064c"
 
 xml2js@0.4.17:
   version "0.4.17"

@@ -1,0 +1,16 @@
+{% include 'settings.html.twig' %}
+
+{% javascripts
+'@AppBundle/Resources/public/js/node_modules/aws-sdk/dist/aws-sdk.js'
+'@AppBundle/Resources/public/js/node_modules/jquery/dist/jquery.min.js'
+'@AppBundle/Resources/public/js/node_modules/amazon-cognito-identity-js/dist/aws-cognito-sdk.js'
+'@AppBundle/Resources/public/js/node_modules/amazon-cognito-identity-js/dist/amazon-cognito-identity.js'
+'@AppBundle/Resources/public/js/custom/cognitoConfirm.js'
+%}
+<script src="{{ asset_url }}"></script>
+{% endjavascripts %}
+
+<h1>Confirm Email</h1>
+
+Confirmation number: <input type="text" name="confirm">
+<button id="confirm">Confirm</button>

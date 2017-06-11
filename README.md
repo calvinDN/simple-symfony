@@ -25,6 +25,7 @@ Ideas
 - HATEOAS
 - Datatables
 - Break into components
+- Weekly points changes
 
 To Do
 -----
@@ -33,6 +34,7 @@ To Do
 - write tests for rest
 - fix user post roles
 - Localization
+- Guzzle
 
 Known Issues
 ------------
@@ -43,3 +45,4 @@ Roadmap
 - [x] Docker
 - [x] Travis CI
 - Convert to serverless
+
